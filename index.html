@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="page-nav">
+        <center>
+            <img src="imagenes/Logo empresa.png" width="400" height="250"/>
+        </center>
+        <h1>Tienda en línea</h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div>
+    <div class="page-content">
+        <div class="customer-info">
+        <h2>Información del Cliente:</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" onchange="customer.name = this.value" required><br>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" onchange="customer.phone = this.value" required><br>
+
+            <label for="nit">NIT:</label>
+            <input type="text" id="nit" onchange="customer.nit = this.value" required><br><br><br>
+        </form>
+    </div>
+	<div class="product-container">
+            <h3>BARBIE - PISCINA GLAM CON MUÑECA</h3>
+            <img src="imagenes/1028857_1.jpg" width="400" height="350"/>
+            <h1>Q154</h1>
+            <button class="button-add" onclick="add('BARBIE - PISCINA GLAM CON MUÑECA', 154)">Agregar</button>
+        </div>
+<div class="product-container">
+            <h3>BARBIE PRINCESA 2 EN 1 - MATTEL</h3>
+            <img src="imagenes/Barbie princesa 2 en 1.jpg" width= "400" height= "350"/>
+            <h1>Q280</h1>
+            <button class="button-add" onclick="add('BARBIE PRINCESA 2 EN 1 - MATTEL', 280)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>RAPUNZEL STYLE SERIES 2 - HASBRO</h3>
+            <img src="imagenes/RAPUNZEL STYLE SERIES 2 - HASBRO.jpg" width= "400" height= "350" />
+            <h1>Q480</h1>
+            <button class="button-add" onclick="add('RAPUNZEL STYLE SERIES 2 - HASBRO', 480)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>BEBÉ SALTITOS Y RISITAS - BABY ALIVE</h3>
+            <img src="imagenes/BEBÉ SALTITOS Y RISITAS - BABY ALIVE.jpg" width= "400" height= "350" />
+            <h1>Q500</h1>
+            <button class="button-add" onclick="add('BEBÉ SALTITOS Y RISITAS - BABY ALIVE', 500)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>PP FLP/SPLSH WTRPRK - MATTEL</h3>
+            <img src="imagenes/PP FLP SPLSH WTRPRK - MATTEL.jpg" width= "400" height= "350" />
+            <h1>Q150</h1>
+            <button class="button-add" onclick="add('PP FLP/SPLSH WTRPRK - MATTEL', 150)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>BA DINO CUTIES BLDH - HASBRO</h3>
+            <img src="imagenes/BA DINO CUTIES BLDH - HASBRO.jpg" width= "400" height= "350" />
+            <h1>Q400</h1>
+            <button class="button-add" onclick="add('BA DINO CUTIES BLDH - HASBRO', 400)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>BEBÉS LLORONES - FANTASY BRUNY</h3>
+            <img src="imagenes/BEBÉS LLORONES - FANTASY BRUNY.jpg" width= "400" height= "350" />
+            <h1>Q380</h1>
+            <button class="button-add" onclick="add('BEBÉS LLORONES - FANTASY BRUNY', 380)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>LITTLE MOMMY - HORA DE DORMIR</h3>
+            <img src="imagenes/LITTLE MOMMY - HORA DE DORMIR.jpg" width= "400" height= "350" />
+            <h1>Q350</h1>
+            <button class="button-add" onclick="add('LITTLE MOMMY - HORA DE DORMIR', 350)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>PP 2 DL CMP PLAY - MATTEL</h3>
+            <img src="imagenes/PP 2 DL CMP PLAY - MATTEL.jpg" width= "400" height= "350" />
+            <h1>Q200</h1>
+            <button class="button-add" onclick="add('PP 2 DL CMP PLAY - MATTEL', 200)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h4>DISNEY PRINCESAS MUÑECA MULAN GUERRERA</h4>
+            <img src="imagenes/DISNEY PRINCESAS MUNECA MULAN GUERRERA.jpg" width= "400" height= "350" />
+            <h1>Q350</h1>
+            <button class="button-add" onclick="add('DISNEY PRINCESAS MUÑECA MULAN GUERRERA', 350)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>AVENGERS TITAN HERO DLX HULK</h3>
+            <img src="imagenes/AVENGERS TITAN HERO DLX HULK.jpg" width= "400" height= "350" />
+            <h1>Q230</h1>
+            <button class="button-add" onclick="add('AVENGERS TITAN HERO DLX HULK', 230)">Agregar</button>
+        </div>
+        
+        <div class="product-container">
+            <h3>JURASSIC WORLD - MÁSCARA DE RAPTOR</h3>
+            <img src="imagenes/JURASSIC WORLD - MÁSCARA DE RAPTOR.jpg" width= "400" height= "350" />
+            <h1>Q400</h1>
+            <button class="button-add" onclick="add('JURASSIC WORLD - MÁSCARA DE RAPTOR', 400)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>IROMAN (LEGENDS SERIES)</h3>
+            <img src="imagenes/figura-de-accion-juguete-marvel-los-vengadores-iron-man-D_NQ_NP_617678-MCO32516478625_102019-F.jpg" width= "400" height= "350"/>
+            <h1>Q400</h1>
+            <button class="button-add" onclick="add('IROMAN', 400)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>NINTENDO ENTERTAINMENT SYS1TEM™ 71374</h3>
+            <img src="imagenes/1035690_1.jpg" width= "400" height= "350" >
+            <h1>Q2,200</h1>
+            <button class="button-add" onclick="add('Nintendo Entertainment System™ 71374', 2200)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>PLAYSET VEHÍCULOS DEL ESPACIO</h3>
+            <img src="imagenes/PLAYSET VEHÍCULOS DEL ESPACIO.jpg" width= "100" height= "350" ><br>
+            <h1>Q150</h1>
+            <button class="button-add" onclick="add('PLAYSET VEHÍCULOS DEL ESPACIO', 150)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>SPD TITAN SPIDER MAN</h3>
+            <img src="imagenes/SPD TITAN SPIDER MAN.jpg" width= "100" height= "350" ><br>
+            <h1>Q130</h1>
+            <button class="button-add" onclick="add('SPD TITAN SPIDER MAN', 130)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>BLACK WIDOW MÁSCARA</h3>
+            <img src="imagenes/BLACK WIDOW MÁSCARA.jpg" width= "100" height= "350" ><br>
+            <h1>Q140</h1>
+            <button class="button-add" onclick="add('BLACK WIDOW MÁSCARA', 140)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>BATBOAT THE PENGUIN PURSUIT</h3>
+            <img src="imagenes/BATBOAT THE PENGUIN PURSUIT.jpg" width= "100" height= "350" ><br>
+            <h1>Q130</h1>
+            <button class="button-add" onclick="add('BATBOAT THE PENGUIN PURSUIT', 130)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>SUPERBIKE - LEGO</h3>
+            <img src="imagenes/SUPERBIKE - LEGO.jpg" width= "100" height= "350" ><br>
+            <h1>Q330</h1>
+            <button class="button-add" onclick="add('SUPERBIKE - LEGO', 330)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>IDEAS WINNIE THE POOH - LEGO</h3>
+            <img src="imagenes/IDEAS WINNIE THE POOH - LEGO.jpg" width= "100" height= "350" ><br>
+            <h1>Q1,099</h1>
+            <button class="button-add" onclick="add('IDEAS WINNIE THE POOH - LEGO', 1099)">Agregar</button>
+        </div>
+        <div class="cart" id="cart"></div>
+    </div>
+    
+</body>
